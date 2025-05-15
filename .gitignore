@@ -1,0 +1,39 @@
+# Hugo default output directory
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Hugo server lock file
+/.hugo_build.lock
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+.hugo_build.lock
+
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+# Node modules
+/node_modules/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.devcontainer/

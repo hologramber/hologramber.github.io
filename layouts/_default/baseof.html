@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}} <!-- home bits bytes -->
+        <div class="container">
+            <div class="cga-content">
+                {{ block "main" . }}
+                    <!-- differs between templates -->
+                {{ end }}
+                {{- partial "footer.html" . -}}
+            </div>
+        </div>
+    </body>
+</html>

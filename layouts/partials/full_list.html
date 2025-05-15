@@ -1,0 +1,11 @@
+{{ $bits := where .Site.RegularPages "Section" "bits" }}
+{{ $bytes := where .Site.RegularPages "Section" "bytes" }}
+
+{{ $combined := union $bits $bytes }}
+{{ range $combined }}
+        {{ if .Params.Short }}
+            {{- partial "byte.html" . -}}
+        {{ else }}
+            {{- partial "bit.html" . -}}
+        {{ end }}
+{{ end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h2 class="bluetext">Long(er) Notes</h2>
+    <div class="list-column">
+        {{ range where .Site.RegularPages "Section" "bytes" }}
+        <div class="row byte-row-list">
+            {{ $image := .Page.Resources.GetMatch .Params.Linkimg }}
+            <img src="{{ $image.RelPermalink }}" alt="Description of the image">
+            <span class="byte-row-content">
+                {{- partial "tags.html" . -}} <a class="titlefont" href="{{ .Permalink }}">{{ .Title }}</a>
+                <p>{{ .Params.Short }} ... {{ (delimit (first 45 (split .Content " ")) " ") | printf "%s..." | plainify }}</p>
+            </span>
+        </div>
+        {{ end }}
+    </div>
+{{ end }}

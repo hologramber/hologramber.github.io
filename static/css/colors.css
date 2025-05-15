@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Noto+Sans+JP:wght@300&family=Noto+Sans:wght@300&display=swap');
+
+:root {
+    --blue: #4a8ae4;
+    --pink: #ED71DB;
+    --magenta: #c438bd;
+    --red: #c13041;
+    --light-pink: #fa99cd;
+    --purple: #826FF2;
+    --cyan: #0093bc;
+    --yellow: #ffcd61;
+    --aqua: #56b6c2;
+    --dark-purple: #40368b;
+    --greyish: #293860;
+    --color-base-00: #1c2127;
+    --color-base-10: #282c34;
+    --color-base-20: #181c20;
+    --color-base-25: #2c313c;
+    --color-base-30: #35393e;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555;
+    --color-base-50: #666;
+    --color-base-60: #999;
+    --color-base-70: #bababa;
+    --color-base-100: #dadada;
+}

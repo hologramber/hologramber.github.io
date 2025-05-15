@@ -1,0 +1,16 @@
+baseURL = 'https://hologramber.github.io'
+languageCode = 'en-us'
+title = 'hologramber'
+summaryLength = 10
+
+[markup.goldmark.renderer]
+  unsafe=true
+
+[params]
+  email = 'a@hologramber.com'
+  github = 'https://github.com/hologramber/'
+  heart = '♡ everything as code, neuroscience, running, 謎解きゲーム, security, infrastructure, tea'
+  heartlist = 'everything as code, neuroscience, running, 謎解きゲーム, security, infrastructure, tea'
+
+[taxonomies]
+  tag = "tags"

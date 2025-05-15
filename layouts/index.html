@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/common.css" type="text/css" rel="stylesheet" />
+<title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+
+<style>
+  .header-row {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header-row-content {
+    display: flex;
+    min-height: 250px;
+    background-color: var(--color-base-00);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+  }
+  
+  .header-row-content > div {
+    flex: 50%;
+  }
+
+  .header-row-content-col-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 400px;
+  }
+
+  .amber-text {
+    flex-grow: 100%;
+  }
+
+  .amber {
+    width: 290px;
+    position: relative;
+  }
+
+  .amber > img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .header-row-content-col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid var(--color-base-60);
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+
+  .left-column {
+    flex: 100%;
+    padding: 0px 20px 20px 0px;
+    overflow-y: wrap;
+  }
+  
+  .right-column {
+    min-width: 390px;
+    max-width: 390px;
+  }
+
+  .mini-width {
+    display: none;
+  }
+
+  .bottom-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  .combined-row {
+    padding-top: 20px;
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+  .header-row-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header-row-content > div {
+    flex: auto;
+    width: 100%;
+  }
+
+  .header-row-content-col-1 {
+    min-height: 185px;
+    max-width: unset;
+  }
+
+  .header-row-content-col-2 {
+    border-left: none;
+    border-top: 1px solid var(--color-base-60);
+  }
+
+  .left-column {
+    flex: 100%;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .byte-row {
+    margin-bottom: 20px;
+  }
+
+  .right-column, .normal-width, .bottom-row {
+    display: none;
+  }
+
+  .mini-width, .combined-row {
+    display: unset;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="container-main">
+        <div class="header-row">
+            <div class="header-row-content">
+                <div class="header-row-content-col-1">
+                    <div class="amber-text">
+                        <h2 class="bluetext">Hello, I’m Amber.</h2>
+                        <h4 class="purpletext">初めまして、アンバーです。</h4>
+                        <br />
+                        This is an unpolished collection of various notes, projects, experiments, segues, and solutions to obscure technical issues that've crossed my path.
+                        <br /><br />
+                        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg> {{ .Site.Params.Heartlist }}
+                        <br />
+                    </div>
+                    <div class="amber">
+                        <img width="70" src="/images/amber.svg" />
+                    </div>
+                </div>
+                <div class="header-row-content-col-2">
+                    <div>
+                        <ul>
+                            <li><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg> {{ .Site.Params.Email }} → for general contact via email</li>
+                            <li><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg> <a href="https://github.com/hologramber">github.com/hologramber</a> → code, sort of</li>
+                            <li><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg> <a href="https://infosec.exchange/@hologramber">infosec.exchange/@hologramber</a> → mostly reading, rarely posting</li>
+                            <li><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg> <a href="https://bsky.app/profile/hologramber.bsky.social">@hologramber.bsky.social</a> → more tumbleweeds here</li>
+                            <li><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> <a href="">twitter.com/hologramber</a> → this house is abandoned, possibly haunted</li>
+                        </ul>
+                        <br />
+                        The best way to contact me is email (or Discord, if we share a server). Only the socials listed above should be considered reliably mine, though my consumption is primarily focused on content aggregation and current events, and thus I'm not especially active myself.
+                    </div>
+                    <div class="bottom-row monotext">
+                        <div class="left-align"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg> <a href="/bits/">short bits</a></div>
+                        <div class="right-align"><a href="/bytes/">long(er) notes</a> <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></div>
+                    </div>
+                    <div class="combined-row monotext">
+                        <div class="left-align"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg> <a href="/bits/">short bits</a> & <a href="/bytes/">long(er) notes</a> mixed</div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="container-content">
+            <div class="left-column">
+                <span class="normal-width">{{- partial "bits_list.html" . -}}</span>
+                <span class="mini-width">{{- partial "full_list.html" . -}}</span>
+            </div>
+            <div class="right-column">
+                {{- partial "bytes_list.html" . -}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

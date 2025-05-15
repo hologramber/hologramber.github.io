@@ -1,0 +1,13 @@
+<ul>
+    {{ range .Pages }}
+        <li>
+            <span class="monotext">{{ .Date.Format "2006.01.02" }}</span> {{- partial "tags.html" . -}} <a href="{{ .RelPermalink }}">
+                {{ if .Title }}
+                    {{ .Title }}</a> {{ (delimit (first 12 (split .Content " ")) " ") | printf "%s..." | plainify }}
+                {{ else }}
+                    {{ (delimit (first 20 (split .Content " ")) " ") | printf "%s..." | plainify }}
+                {{ end }}
+            </a>
+        </li>
+    {{ end }}
+</ul>

@@ -1,0 +1,6 @@
+<div class="row">
+    {{ if .Title }}
+        <span class="titlefont bluetext">{{ .Title }}</span>
+    {{ end }}
+    {{ .Content | markdownify }}
+</div>

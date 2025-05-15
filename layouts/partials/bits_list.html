@@ -1,0 +1,3 @@
+{{ range where .Site.RegularPages "Section" "bits" }}
+    {{- partial "bit.html" . -}}
+{{ end }}
