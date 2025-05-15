@@ -14,3 +14,7 @@ summaryLength = 10
 
 [taxonomies]
   tag = "tags"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
