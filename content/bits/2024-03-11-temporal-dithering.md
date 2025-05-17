@@ -2,7 +2,7 @@
 title: "Disable Temporal Dithering on MacOS (Apple Silicon)"
 date: 2024-03-11
 tags: ["apple", "config"]
-draft: true
+draft: false
 ---
 Temporal dithering (aka frame rate control) flips each pixel between two nearby color codes frame-by-frame at the speed of the display’s refresh rate, so your eyes merge them into the “missing” shade, tricking your eyes into perceiving more colors than the display is capable of. 
 
