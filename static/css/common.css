@@ -108,8 +108,8 @@ li { line-height: 1.6; }
 }
 
 .byte-row {
-    max-height: 140px;
-    height: 140px;
+    /* max-height: 140px; */
+    /* height: 140px; */
     overflow-y: hidden;
     display: flex;
     margin-bottom: 10px;
@@ -121,8 +121,8 @@ li { line-height: 1.6; }
 }
 
 .byte-row img, .byte-row-list img {
-    width: 105px;
-    height: 105px;
+    width: 100px;
+    height: 100px;
     border-radius: 6px;
     object-fit: cover;
 }
@@ -131,7 +131,7 @@ li { line-height: 1.6; }
     padding-left: 15px;
 }
 
-.byte-row p { margin: 0; }
+.byte-row p, .byte-row-list p { margin: 0; }
 .bit-row p { margin: 0 0 6px 0; }
 
 .cga-header-nav {
