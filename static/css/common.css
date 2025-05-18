@@ -1,8 +1,6 @@
 @import "./colors.css";
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -34,10 +32,9 @@ h1, h2, h3, h4, h5, h6, .titlefont {
 }
 
 pre, code {
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    word-break: break-all;
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    word-break: break-word;
     color: var(--aqua);
 }
 
@@ -50,6 +47,9 @@ pre code {
     padding: 1em;
 }
 
+ol { margin: 0; }
+li { line-height: 1.6; }
+
 .svg-icon {
     width: 1.2em;
     height: 1.2em;
@@ -57,22 +57,18 @@ pre code {
     fill: var(--pink);
 }
 
-.purpletext {
-    color: var(--purple);
-}
-
-.bluetext {
-    color: var(--blue);
-}
-
-.pinktext {
-    color: var(--pink);
-}
+.purpletext { color: var(--purple); }
+.bluetext { color: var(--blue); }
+.pinktext { color: var(--pink); }
+.italics { font-style: italic; }
+.left-align { text-align: left; }
+.right-align { text-align: right; }
+.center-align { text-align: center; }
 
 .monotext {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
-  }
+}
 
 .container-main {
     display: flex;
@@ -165,6 +161,10 @@ pre code {
     justify-content: flex-end;
 }
 
+.cga-header ul li {
+    line-height: 1.6em;
+}
+
 .cga-nav-link {
     padding: 10px 15px 0px 15px;
     margin: 5px;
@@ -205,7 +205,6 @@ pre code {
     width: 250px;
     margin: 10px 20px;
     display: flex;
-    /* flex: 1 1 auto; */
     flex-flow: column nowrap;
     align-items: center;
     padding: 10px;
@@ -230,14 +229,6 @@ pre code {
     clear: both;
 }
 
-.italics {
-    font-style: italic;
-}
-
-.cga-header ul li {
-    line-height: 1.6em;
-}
-
 .header-image {
     float: right; 
     margin: 0 0 10px 20px;
@@ -258,26 +249,6 @@ pre code {
     line-height: 2;
 }
 
-ol {
-    margin: 0;
-}
-
-li {
-    line-height: 1.6;
-}
-
-.left-align {
-    text-align: left;
-}
-
-.right-align {
-    text-align: right;
-}
-
-.center-align {
-    text-align: center;
-}
-
 .tag {
     background: var(--greyish);
     border-radius: 6px;
@@ -285,6 +256,5 @@ li {
     font-size: 60%;
     vertical-align: text-top;
     line-height: 2.2;
-    /* capitalize all letters */
     text-transform: uppercase;
 }
