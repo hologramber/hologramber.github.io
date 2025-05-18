@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .titlefont {
     height: 1.2em;
     vertical-align: -0.250em;
     fill: var(--pink);
-  }
+}
 
 .purpletext {
     color: var(--purple);
@@ -93,35 +93,35 @@ h1, h2, h3, h4, h5, h6, .titlefont {
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .row p {
+.row p {
     margin: 0;
-  }
+}
 
-  .byte-row {
+.byte-row {
     max-height: 140px;
     height: 140px;
     overflow-y: hidden;
     display: flex;
     margin-bottom: 10px;
-  }
+}
 
-  .byte-row-list {
+.byte-row-list {
     display: flex;
     margin-bottom: 10px;
-  }
+}
 
-  .byte-row img, .byte-row-list img {
+.byte-row img, .byte-row-list img {
     width: 105px;
     height: 105px;
     border-radius: 6px;
     object-fit: cover;
-  }
+}
 
-  .byte-row-content {
+.byte-row-content {
     padding-left: 15px;
-  }
+}
 
 .cga-container {
     max-width: 1200px;
@@ -247,19 +247,19 @@ ol {
 
 li {
     line-height: 1.6;
-  }
+}
 
 .left-align {
     text-align: left;
-  }
+}
 
-  .right-align {
+.right-align {
     text-align: right;
-  }
+}
 
-  .center-align {
+.center-align {
     text-align: center;
-  }
+}
 
 .tag {
     background: var(--greyish);
