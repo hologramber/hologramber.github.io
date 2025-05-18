@@ -110,7 +110,7 @@ li { line-height: 1.6; }
 .byte-row {
     /* max-height: 140px; */
     /* height: 140px; */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     display: flex;
     margin-bottom: 10px;
 }
@@ -133,6 +133,17 @@ li { line-height: 1.6; }
 
 .byte-row p, .byte-row-list p { margin: 0; }
 .bit-row p { margin: 0 0 6px 0; }
+
+.amber {
+    width: 290px;
+    position: relative;
+}
+
+.amber > img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 .cga-header-nav {
     max-width: 1200px;
