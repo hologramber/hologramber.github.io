@@ -1,6 +1,7 @@
 {{ define "main" }}
     <article>
         <h2 class="bluetext">{{ .Title }}</h2>
+        <span class="monotext">{{ .Date.Format "2006.01.02" }}</span> {{- partial "tags.html" . }}
         {{ .Content }}
     </article>
 {{ end }}

@@ -7,125 +7,125 @@
 <link rel="stylesheet" href="/css/common.css" type="text/css" rel="stylesheet" />
 <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
 <style>
-  pre code {
+pre code {
     box-shadow: none;
     padding: 0;
-  }
+}
 
-  .header-row {
+.header-row {
     width: 100%;
     margin-bottom: 20px;
-  }
+}
 
-  .header-row-content {
+.header-row-content {
     display: flex;
     min-height: 250px;
     background-color: var(--color-base-00);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-  }
+}
   
-  .header-row-content > div {
+.header-row-content > div {
     flex: 50%;
-  }
+}
 
-  .header-row-content-col-1 {
+.header-row-content-col-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     max-width: 400px;
-  }
+}
 
-  .amber {
+.amber {
     width: 290px;
     position: relative;
-  }
+}
 
-  .amber > img {
+.amber > img {
     position: absolute;
     right: 0;
     bottom: 0;
-  }
+}
 
-  .header-row-content-col-2 {
+.header-row-content-col-2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-left: 1px solid var(--color-base-60);
     padding: 20px;
-  }
+}
   
-  ul {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  .left-column {
+.left-column {
     flex: 100%;
     padding: 0px 20px 20px 0px;
     overflow-y: wrap;
-  }
+}
   
-  .right-column {
+.right-column {
     min-width: 390px;
     max-width: 390px;
-  }
+}
 
-  .mini-width {
+.mini-width {
     display: none;
-  }
+}
 
-  .bottom-row {
+.bottom-row {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-  }
+}
 
-  .combined-row {
+.combined-row {
     padding-top: 20px;
     display: none;
-  }
+    }
 
-  @media (max-width: 900px) {
-  .header-row-content {
-    flex-direction: column;
-    height: auto;
-  }
+@media (max-width: 900px) {
+    .header-row-content {
+        flex-direction: column;
+        height: auto;
+    }
 
-  .header-row-content > div {
-    flex: auto;
-    width: 100%;
-  }
+    .header-row-content > div {
+        flex: auto;
+        width: 100%;
+    }
 
-  .header-row-content-col-1 {
-    min-height: 185px;
-    max-width: unset;
-  }
+    .header-row-content-col-1 {
+        min-height: 185px;
+        max-width: unset;
+    }
 
-  .header-row-content-col-2 {
-    border-left: none;
-    border-top: 1px solid var(--color-base-60);
-  }
+    .header-row-content-col-2 {
+        border-left: none;
+        border-top: 1px solid var(--color-base-60);
+    }
 
-  .left-column {
-    flex: 100%;
-    padding: 0px 0px 20px 0px;
-  }
+    .left-column {
+        flex: 100%;
+        padding: 0px 0px 20px 0px;
+    }
 
-  .byte-row {
-    margin-bottom: 20px;
-  }
+    .byte-row {
+        margin-bottom: 20px;
+    }
 
-  .right-column, .normal-width, .bottom-row {
-    display: none;
-  }
+    .right-column, .normal-width, .bottom-row {
+        display: none;
+    }
 
-  .mini-width, .combined-row {
-    display: unset;
-  }
+    .mini-width, .combined-row {
+        display: unset;
+    }
 }
 </style>
 </head>

@@ -4,9 +4,9 @@
 {{ $combined := union $bits $bytes }}
 
 {{ range sort $combined "Date" "desc" }}
-        {{ if .Params.Short }}
-            {{- partial "byte.html" . -}}
-        {{ else }}
-            {{- partial "bit.html" . -}}
-        {{ end }}
+    {{ if .Params.Short }}
+        {{- partial "byte.html" . -}}
+    {{ else }}
+        {{- partial "bit.html" . -}}
+    {{ end }}
 {{ end }}

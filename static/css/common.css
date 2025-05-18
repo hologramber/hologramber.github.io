@@ -132,7 +132,7 @@ li { line-height: 1.6; }
 }
 
 .byte-row p { margin: 0; }
-.bit-row p { margin: 6px 0; }
+.bit-row p { margin: 0 0 6px 0; }
 
 .cga-header-nav {
     max-width: 1200px;

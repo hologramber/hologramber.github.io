@@ -1,15 +1,15 @@
 {{ define "title" }}
-  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
-  {{ .Title }} &ndash; {{ .Site.Title }}
+    <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+    {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 
 {{ define "main" }}
-<article>
-    <h2 class="bluetext">{{ .Title }}</h2>
-    <span class="monotext">{{ .Date.Format "2006.01.02" }}</span> {{- partial "tags.html" . }}
-    <div class="cga-header">
-        {{- if isset .Params "github" -}}<a href="{{- .Site.Params.Github -}}{{- .Params.Github -}}">{{- .Site.Params.Github -}}{{- .Params.Github -}}</a>{{ end }}
-    </div>
-    {{ .Content }}
-</article>
+    <article>
+        <h2 class="bluetext">{{ .Title }}</h2>
+        <span class="monotext">{{ .Date.Format "2006.01.02" }}</span> {{- partial "tags.html" . }}
+        <div class="cga-header">
+            {{- if isset .Params "github" -}}<a href="{{- .Site.Params.Github -}}{{- .Params.Github -}}">{{- .Site.Params.Github -}}{{- .Params.Github -}}</a>{{ end }}
+        </div>
+        {{ .Content }}
+    </article>
 {{ end }}
