@@ -2,7 +2,8 @@
 {{ $bytes := where .Site.RegularPages "Section" "bytes" }}
 
 {{ $combined := union $bits $bytes }}
-{{ range $combined }}
+
+{{ range sort $combined "Date" "desc" }}
         {{ if .Params.Short }}
             {{- partial "byte.html" . -}}
         {{ else }}

@@ -108,10 +108,6 @@ li { line-height: 1.6; }
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.row p {
-    margin: 0;
-}
-
 .byte-row {
     max-height: 140px;
     height: 140px;
@@ -135,6 +131,9 @@ li { line-height: 1.6; }
 .byte-row-content {
     padding-left: 15px;
 }
+
+.byte-row p { margin: 0; }
+.bit-row p { margin: 6px 0; }
 
 .cga-container {
     max-width: 1200px;
