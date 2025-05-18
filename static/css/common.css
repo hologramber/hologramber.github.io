@@ -33,6 +33,23 @@ h1, h2, h3, h4, h5, h6, .titlefont {
     margin: 0;
 }
 
+pre, code {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    word-break: break-all;
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    color: var(--aqua);
+}
+
+pre code {
+    display: block;
+    overflow-x: auto;
+    background-color: var(--color-base-00);
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
 .svg-icon {
     width: 1.2em;
     height: 1.2em;
