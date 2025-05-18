@@ -6,13 +6,12 @@
 <link rel="icon" type="image/png" href="/images/icons/cga_pixel_icon_96.png" />
 <link rel="stylesheet" href="/css/common.css" type="text/css" rel="stylesheet" />
 <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
-
 <style>
   pre code {
     box-shadow: none;
     padding: 0;
   }
-  
+
   .header-row {
     width: 100%;
     margin-bottom: 20px;
@@ -36,10 +35,6 @@
     justify-content: space-between;
     padding: 20px;
     max-width: 400px;
-  }
-
-  .amber-text {
-    flex-grow: 100%;
   }
 
   .amber {
@@ -139,7 +134,7 @@
         <div class="header-row">
             <div class="header-row-content">
                 <div class="header-row-content-col-1">
-                    <div class="amber-text">
+                    <div style="flex-grow: 100%;">
                         <h2 class="bluetext">Hello, I’m Amber.</h2>
                         <h4 class="purpletext">初めまして、アンバーです。</h4>
                         <br />

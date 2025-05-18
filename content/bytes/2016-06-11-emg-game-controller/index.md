@@ -7,7 +7,7 @@ short: "Selective muscle activation via surface EMG used to control a virtual ga
 tags: ["archive", "science", "project"]
 draft: false
 ---
-<span class="italics">This writeup comes long after the fact; the GitHub repo is an archive of old project code with no refactoring or cleanup.</span> 
+<i>This writeup comes long after the fact; the GitHub repo is an archive of old project code with no refactoring or cleanup.</i> 
 
 The EMG controlled game system (affectionately known as NeuroGame, or NG) was designed as a combination hardware/software platform which provides augmented visual feedback based on appropriate and selective muscle activation via real-time surface EMG recordings. It employs online wavelet analysis in auto-calibrating the software response to a series of sEMG signal inputs without human intervention. The initial clinical studies used a commercially available video game (Peggle) as the mechanism for biofeedback, but the software was designed to be modular and functions equally well with a number of other game options.
 
