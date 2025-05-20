@@ -133,6 +133,7 @@ li { line-height: 1.6; }
 
 .byte-row p, .byte-row-list p { margin: 0; }
 .bit-row p { margin: 0 0 6px 0; }
+.bit-row ul { margin: 0 0 6px 0;}
 
 .amber {
     width: 290px;
