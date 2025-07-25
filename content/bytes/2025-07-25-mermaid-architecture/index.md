@@ -33,7 +33,7 @@ The official [Architecture Diagrams Documentation](https://mermaid.js.org/syntax
 
 The components of a Mermaid architecture diagram are: groups, services, edges, and junctions. Icons for groups or services are specified with parentheses, and labels are specified with brackets. Edges are links between groups and/or services. Junctions are nodes which can be used to split edges. Line comments are specified with `%%`.
 
-<a href="mermaid_example1.svg"><img class="image-center" alt="example mermaid architecture diagram showing a group, service, edge, and junction" src="mermaid_example1.svg" /></a>
+<a href="mermaid_example1.svg"><img class="image-center-small" alt="example mermaid architecture diagram showing a group, service, edge, and junction" src="mermaid_example1.svg" /></a>
 
 ```mermaid
 architecture-beta
@@ -76,7 +76,7 @@ architecture-beta
 
 ### Junctions
 
-<a href="mermaid_junctions.svg"><img class="image-center" alt="example mermaid architecture diagram showing junctions from one service to three others" src="mermaid_junctions.svg" /></a>
+<a href="mermaid_junctions.svg"><img class="image-center-small" alt="example mermaid architecture diagram showing junctions from one service to three others" src="mermaid_junctions.svg" /></a>
 
 ```mermaid
 architecture-beta
@@ -109,7 +109,7 @@ Note that the group ID, such as `group1` below, cannot be used to specify an edg
 
 #### Service-to-Service
 
-<a href="mermaid_group_edge_edge.svg"><img class="image-center" alt="example mermaid architecture diagram showing an edge-to-edge connection" src="mermaid_group_edge_edge.svg" /></a>
+<a href="mermaid_group_edge_edge.svg"><img class="image-center-small" alt="example mermaid architecture diagram showing an edge-to-edge connection" src="mermaid_group_edge_edge.svg" /></a>
 
 ```mermaid
 architecture-beta
@@ -125,7 +125,7 @@ architecture-beta
 
 #### Group-to-Service
 
-<a href="mermaid_group_groupedge_edge.svg"><img class="image-center" alt="example mermaid architecture diagram showing a group-edge-to-edge connection" src="mermaid_group_groupedge_edge.svg" /></a>
+<a href="mermaid_group_groupedge_edge.svg"><img class="image-center-small" alt="example mermaid architecture diagram showing a group-edge-to-edge connection" src="mermaid_group_groupedge_edge.svg" /></a>
 
 ```mermaid
 architecture-beta
@@ -141,7 +141,7 @@ architecture-beta
 
 #### Group-to-Group
 
-<a href="mermaid_group_groupedge_groupedge.svg"><img class="image-center" alt="example mermaid architecture diagram showing a group-edge-to-group-edge connection" src="mermaid_group_groupedge_groupedge.svg" /></a>
+<a href="mermaid_group_groupedge_groupedge.svg"><img class="image-center-small" alt="example mermaid architecture diagram showing a group-edge-to-group-edge connection" src="mermaid_group_groupedge_groupedge.svg" /></a>
 
 ```mermaid
 architecture-beta
@@ -157,7 +157,7 @@ architecture-beta
 
 ### Nested Groups
 
-<a href="mermaid_nested_groups.svg"><img class="image-center" alt="example mermaid architecture diagram showing nested groups" src="mermaid_nested_groups.svg" /></a>
+<a href="mermaid_nested_groups.svg"><img class="image-center-small" alt="example mermaid architecture diagram showing nested groups" src="mermaid_nested_groups.svg" /></a>
 
 ```mermaid
 architecture-beta

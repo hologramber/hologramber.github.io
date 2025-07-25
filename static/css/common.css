@@ -187,6 +187,11 @@ li { line-height: 1.6; }
     margin: 0 auto; 
     max-width: 80%;
     display: block; }
+.image-center-small {
+    margin: 0 auto; 
+    max-width: 50%;
+    display: block; 
+}
 
 .clear {
     clear: both;
