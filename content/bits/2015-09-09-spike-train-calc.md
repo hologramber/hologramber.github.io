@@ -4,7 +4,7 @@ date: 2015-09-09
 tags: ["science"]
 draft: false
 ---
-Converts between inter-pulse intervals/train burst widths and frequency/number of pulses & plots an example waveform (also my first foray into JS/jQuery). Mostly useful for visualizing spike trains in discussions or double checking math when hopping between ephys equipment.
+Converts between inter-pulse intervals/train burst widths and frequency/number of pulses & plots an example waveform (also my first foray into JS/jQuery). Mostly useful for visualizing spike trains in discussions or double-checking math when hopping between ephys equipment.
 
 - Demo: [ephys_calc.html](https://hologramber.github.io/tools/ephys_calc.html)
 - Code: [ephys-stimulation](https://github.com/hologramber/ephys-stimulation)

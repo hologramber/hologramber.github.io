@@ -75,7 +75,7 @@ Automatic/ethernet-based sun shade control for a pre-existing Somfy installation
 ### Sun Shade Notes
 <a href="denhikage-ss.png"><img class="image-right" height="170" alt="android app screenshot of shade operations" src="denhikage-ss.png" /></a>
 
-* Somfy RF boards can be harvested from Somfy remotes -- purchase one that has however many channels you which to replicate. To clone an existing remote's settings, put both remotes on the channel you want to clone, then hold the button on the back of the original remote down for 2s (the shades will move up/down briefly), followed by holding the button on the back of the new remote down for 2s (the shades will again move up/down briefly). I seemed to have some issues with this process if I tried to do sequential channel programming, so after doing one channel, I'd wait about 5 minutes, do another channel, etc.
+* Somfy RF boards can be harvested from Somfy remotes -- purchase one that has however many channels you wish to replicate. To clone an existing remote's settings, put both remotes on the channel you want to clone, then hold the button on the back of the original remote down for 2s (the shades will move up/down briefly), followed by holding the button on the back of the new remote down for 2s (the shades will again move up/down briefly). I seemed to have some issues with this process if I tried to do sequential channel programming, so after doing one channel, I'd wait about 5 minutes, do another channel, etc.
 * More information on Somfy systems can be found here: [http://www.somfy.com/.../literature/instructions](http://www.somfy.com/nam_pro/index.cfm?page=/nam_pro/home/trade/commercial_literature/instructions)
 * A single Android app controls both, I tried to make the shade shapes roughly translate to the shade shapes IRL. You select the shade, and then hit up, down, or stop. The app works by sending a request to a specific URL at the IP of each arduino -- when those requests are received, the arduino parses the URL to extract the command. This also means you can control the shades via the computer.
 * Arduino connects to ethernet shield which connects to the protoboard. Each 'control' (up, down, stop, and select) is run through an optoisolator (quad chip used in these examples) before connecting to a digital pin. Each LED is connected to an analog pin. I'm really bad at Fritzing, it turns out, but here's a spiderweb to illustrate.
@@ -86,7 +86,7 @@ Automatic/ethernet-based sun shade control for a pre-existing Somfy installation
 </div>
 
 ## Music Dashboard (Sonos)
-Modified version of jishi's Node.js Sonos Web Controller. I primarily listen to Pandora channels over the Sonos system -- currently those must be added as favorites through another interface to be visible in this this web controller. To add different Sonos zones to a group, drag and drop in the left hand column. 
+Modified version of jishi's Node.js Sonos Web Controller. I primarily listen to Pandora channels over the Sonos system -- currently those must be added as favorites through another interface to be visible in this web controller. To add different Sonos zones to a group, drag and drop in the left-hand column. 
 
 * Sonos Music System: [http://www.sonos.com](http://www.sonos.com/)
 * Node.js: [http://nodejs.org](http://nodejs.org/)

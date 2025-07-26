@@ -7,7 +7,7 @@ short: "Tools for studying insect flight mechanics with a custom torque sensor a
 tags: ["archive", "science", "project"]
 draft: false
 ---
-A series of tools designed for observing and experimenting with the mechanics of insect flight. Includes a tethered insect flight simulator which combines a closed loop visual feedback system with an optical transducer that records torque produced by yaw motions -- this allows for (~soft) real time external control of the relationship between insect yaw and resulting movement of the insect's visual field. I was interested in the extent to which feedback gain between torque (yaw) and image motion determines an insect's ability to track a visual stimulus, along with the ability of an insect to adapt to different gains (including negative gain) applied to the feedback loop. The latter investigates the potential for natural plasticity in the visual flight control circuit. 
+A series of tools designed for observing and experimenting with the mechanics of insect flight. Includes a tethered insect flight simulator which combines a closed-loop visual feedback system with an optical transducer that records torque produced by yaw motions -- this allows for (~soft) real-time external control of the relationship between insect yaw and resulting movement of the insect's visual field. I was interested in the extent to which feedback gain between torque (yaw) and image motion determines an insect's ability to track a visual stimulus, along with the ability of an insect to adapt to different gains (including negative gain) applied to the feedback loop. The latter investigates the potential for natural plasticity in the visual flight control circuit. 
 
 By using visual stimuli to elicit yaw behaviors in hawkmoths tethered to the custom torque sensor, this research explored whether insects take advantage of timing modulation to accomplish primary control via power muscles. Simultaneous recordings of both pairs of dorsolongitudinal and dorsoventral muscles were obtained using implanted bipolar tungsten electrodes.
 
@@ -55,7 +55,7 @@ The torque sensor and associated divider circuit allow for measuring the yaw mot
 * Add capacitors to the photodiode splitter circuit
 * The Alligator Tech low-pass filter/instrumentation amp helps a ton with filtering out wingbeat frequencies
 
-Delay is an issue, in both circuits and visual refresh rates. Most projectors don't refresh the display image as often as the refresh rate would imply, and documentation on this is (frustratingly) lacking. Ideally this entire system would be implemented in a realtime OS.
+Delay is an issue, in both circuits and visual refresh rates. Most projectors don't refresh the display image as often as the refresh rate would imply, and documentation on this is (frustratingly) lacking. Ideally this entire system would be implemented in a real-time OS.
 
 <a href="torquetestsinusoidal.png"><img class="image-center" alt="torque test w/sinusoidal grating" src="torquetestsinusoidal.png" /></a>
 

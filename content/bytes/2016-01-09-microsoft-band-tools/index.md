@@ -7,16 +7,16 @@ short: "Various utilities for polling and extracting data from the (now very obs
 tags: ["archive", "project"]
 draft: false
 ---
-This is a summary of various utilities for interacting with the Microsoft Band: a simple Android app for polling the sensor data, and a windows app for downloading data from Microsoft Health Cloud w/a few simple Python scripts for parsing/analyzing data. 
+This is a summary of various utilities for interacting with the Microsoft Band: a simple Android app for polling the sensor data, and a Windows app for downloading data from Microsoft Health Cloud w/a few simple Python scripts for parsing/analyzing data. 
 
 It's now quite obsolete, but it was one of the first interesting smart wrist wearables.
 
 ## Android App (BandStat)
 <a href="bandstat.png"><img class="image-left" height="160" alt="bandstat" src="bandstat.png" /></a>
 
-Bare-bones Android app which interfaces with the Microsoft Band (using the newly released SDK) -- the app displays band version, firmware version, and real-time readings from the heart rate, skin temperature, uv index, accelerometer, and gyroscope sensors. It's not anything resembling pretty (read: currently there is no actual "design" involved with this app), but it's functional. I pair the Band with a Samsung Galaxy S5. The Android interface is well-developed, but lacks the keyboard functionality that Windows Phone 8.1 has. For viewing data, the web interface is best: [https://dashboard.microsofthealth.com](https://dashboard.microsofthealth.com).
+Bare-bones Android app which interfaces with the Microsoft Band (using the newly released SDK) -- the app displays band version, firmware version, and real-time readings from the heart rate, skin temperature, UV index, accelerometer, and gyroscope sensors. It's not anything resembling pretty (read: currently there is no actual "design" involved with this app), but it's functional. I pair the Band with a Samsung Galaxy S5. The Android interface is well-developed, but lacks the keyboard functionality that Windows Phone 8.1 has. For viewing data, the web interface is best: [https://dashboard.microsofthealth.com](https://dashboard.microsofthealth.com).
 
-The first SDK release offers access to the device sensors (accelerometer, gyrometer, UV index, skin temperature, heart rate), a way to change the colors/theme of the Band interface, the ability to create the own tile, access to the haptic motor for sending alerts, and the ability to send messages to the Band itself. Hoping for keyboard functionality outside of the Windows Phone universe in the next release -- would be nice to take/store quick notes on the Band itself.
+The first SDK release offers access to the device sensors (accelerometer, gyrometer, UV index, skin temperature, heart rate), a way to change the colors/theme of the Band interface, the ability to create your own tile, access to the haptic motor for sending alerts, and the ability to send messages to the Band itself. Hoping for keyboard functionality outside of the Windows Phone universe in the next release -- would be nice to take/store quick notes on the Band itself.
 
 In [Android Studio](http://developer.android.com/sdk/index.html), include the [Microsoft Band SDK](http://developer.microsoftband.com) jar file in the Android project:
 1. Go to the Android project's application directory and locate the libs folders (you can create it if it does not already exist), and copy the jar file to this location.
@@ -89,7 +89,7 @@ The **Application ID** (purple highlight below) is your *ClientId*, and the stri
 <a href="installb.png"><img class="image-center" src="installb.png" /></a>
 
 ### Download and Extract BandSandbox Code
-Download and unzip (right click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/hologramber/microsoft-band-utils/archive/refs/heads/master.zip">https://github.com/hologramber/microsoft-band-utils/archive/refs/heads/master.zip</a>
+Download and unzip (right-click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/hologramber/microsoft-band-utils/archive/refs/heads/master.zip">https://github.com/hologramber/microsoft-band-utils/archive/refs/heads/master.zip</a>
 
 ### Download and Install Visual Studio Community
 Download and run the Visual Studio Community installer: <a href="https://www.visualstudio.com/vs/community/">https://www.visualstudio.com/vs/community/</a>

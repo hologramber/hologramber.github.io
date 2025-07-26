@@ -2,13 +2,13 @@
 title: "Tucker Davis Utilities"
 date: 2016-08-01
 linkimg: "linktdt.png"
-short: "Various integraitons with TDT neurophysiology hardware: cable integrity test suite, tank extractor, Lego connector."
+short: "Various integrations with TDT neurophysiology hardware: cable integrity test suite, tank extractor, Lego connector."
 tags: ["archive", "science", "project"]
 draft: false
 ---
-TuckerDavis Technologies, or TDT, is a provider of neurophysiology hardware and software solutions used in a variety of research applications. Their hardware includes amplifiers, filters, electrodes, and other components that allow for the real-time recording of electrical activity from the brain and other parts of the nervous system. These are a series of tools, fun projects, and software packages used for working within the TDT environment.
+Tucker-Davis Technologies, or TDT, is a provider of neurophysiology hardware and software solutions used in a variety of research applications. Their hardware includes amplifiers, filters, electrodes, and other components that allow for the real-time recording of electrical activity from the brain and other parts of the nervous system. This is a series of tools, fun projects, and software packages used for working within the TDT environment.
 
-## TuckerDavis + Lego Mindstorms NXT Connection
+## Tucker-Davis + Lego Mindstorms NXT Connection
 
 https://github.com/hologramber/tdt-nxt-connection
 
@@ -20,16 +20,16 @@ Uses lever inputs on a Mindstorms NXT brick (the “button” NXT input is a sim
 
 https://github.com/hologramber/tdt-extraction-gui
 
-Data extraction tools / GUI in MATLAB for wrangling neuro/electrophys data stored in TDT (TuckerDavis Technologies) tank format – OpenDeveloper must installed for this code to work.
+Data extraction tools / GUI in MATLAB for wrangling neuro/electrophys data stored in TDT (Tucker-Davis Technologies) tank format – OpenDeveloper must be installed for this code to work.
 
 - OpenDeveloper can be acquired from TDT: http://www.tdt.com/downloads.html
-- This works via ActiveX calls, they must be enabled on the operating system side
+- This works via ActiveX calls -- they must be enabled on the operating system side
 - Data extracted relative to a specific tank is useful for matching Epoch Data to recording data timestamps
 - Extracting from an empty store with no epoch trigger will fail (this is a bug)
 
 <a href="tdtextract1.png"><img class="image-center" alt="TDT Tank Extractor GUI" src="tdtextract1.png" /></a>
 
-## TuckerDavis Cable Integrity Tester
+## Tucker-Davis Cable Integrity Tester
 
 https://github.com/hologramber/tuckerdavis-cable-tester
 
